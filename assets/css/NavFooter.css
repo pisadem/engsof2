@@ -1,0 +1,29 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #0d6efd; 
+    --light-gray: #f8f9fa;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* General Body and Layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+}
+
+/* --- Navbar Styles --- */
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.logo-img {
+    height: 40px; 
+}
+
+/* --- Footer Styles --- */
+.footer {
+    border-top: 1px solid #eee;
+}
