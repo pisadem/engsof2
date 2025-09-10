@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #0d6efd; /* Bootstrap default blue, aligns with mockup */
+    --secondary-color: #6c757d;
+    --light-gray: #f8f9fa;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --border-radius: 0.75rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+}
+
+/* Updated logo image styling */
+.logo-img {
+    height: 40px; 
+}
+
+.logo-img-auth {
+    max-width: 180px;
+    height: auto;
+}
+
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1618423321286-383a38e83b4b?q=80&w=1932) no-repeat center center;
+    background-size: cover;
+}
+
+.category-item {
+    padding: 1rem;
+}
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category-icon:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.campaign-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out;
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+}
+
+.campaign-card .card-img-top {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    height: 200px;
+    object-fit: cover;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+/* Dashboard & Post Cards */
+.dashboard-card,
+.post-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.card-img-top-post {
+    border-radius: 0;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* Auth Pages (Login/Signup) */
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 1rem;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
