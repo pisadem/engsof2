@@ -21,30 +21,34 @@
                     </a>
                     <h5 class="mt-2 text-muted">Cadastre-se</h5>
                 </div>
-                <form>
+                <form id="cadastro-pf">
                     <div class="mb-3">
-                        <label for="fullName" class="form-label">Nome completo</label>
-                        <input type="text" class="form-control" id="fullName">
+                        <label for="primeiro-nome" class="form-label">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="primeiro-nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ultimo-nome" class="form-label">Ultimo Nome</label>
+                        <input type="text" class="form-control" id="ultimo-nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00">
+                        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" minlength="11" maxlength="11" required>
                     </div>
                     <div class="mb-4">
                         <label for="birthDate" class="form-label">Data de nascimento</label>
-                        <input type="date" class="form-control" id="birthDate">
+                        <input type="date" class="form-control" id="nascimento" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" required>
                     </div>
                     <div class="mb-3">
                         <label for="confirmPassword" class="form-label">Confirme a Senha</label>
-                        <input type="password" class="form-control" id="confirmPassword">
+                        <input type="password" class="form-control" id="confirmPassword" required>
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-primary">Criar Conta</button>
@@ -57,6 +61,7 @@
         </div>
     </div>
     <script src="./assets/scripts/loadNavFoot.js"></script>
+    <script src="./assets/scripts/cadastro.js"></script>
 </body>
 <footer id="footer"></footer>
 </html>

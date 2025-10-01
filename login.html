@@ -20,20 +20,20 @@
                         <img src="./assets/imagens/logo.jpg" alt="Purrpose Logo" class="logo-img-auth">
                     </a>
                 </div>
-                <form>
+                <form id="login-form">
                     <div class="mb-3">
                         <label for="email" class="form-label">Usuário</label>
-                        <input type="email" class="form-control" id="email" placeholder="seu@email.com">
+                        <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
                     </div>
                     <div class="mb-4">
                         <label for="password" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="password" placeholder="Sua senha">
+                        <input type="password" class="form-control" id="senha" placeholder="Sua senha" required>
                         <div class="text-center mt-4">
                             <p class="mb-0">Esqueceu a senha? <a href="recuperar.html">Recuperar senha</a></p>
                         </div>
                     </div>
                     <div class="d-grid">
-                        <a href="./dashboard.html" class="btn btn-primary">Entrar</a>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                 </form>
                 <div class="text-center mt-4">
@@ -43,6 +43,7 @@
         </div>
     </div>
     <script src="./assets/scripts/loadNavFoot.js"></script>
+    <script src="./assets/scripts/login.js"></script>
 </body>
 <footer id="footer"></footer>
 </html>
